@@ -31,7 +31,7 @@ public class Goomba : MonoBehaviour
 			Flip();
 		}
 		// Set the enemy's velocity to moveSpeed in the x direction.
-		GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+		GetComponent<Rigidbody2D>().linearVelocity = new Vector2(transform.localScale.x * moveSpeed, GetComponent<Rigidbody2D>().linearVelocity.y);
 
 	}
 
